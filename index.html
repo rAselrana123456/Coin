@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coin Jump Game</title>
+    <style>
+        body { text-align: center; font-family: Arial, sans-serif; }
+        #coin { font-size: 50px; cursor: pointer; }
+        #coins { font-size: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Coin Jump</h1>
+    <p>Tap the coin to earn points!</p>
+    <div id="coin">💰</div>
+    <p>Coins: <span id="coins">0</span></p>
+    <script>
+        let coins = 0;
+        document.getElementById("coin").onclick = function() {
+            coins++;
+            document.getElementById("coins").innerText = coins;
+        };
+    </script>
+</body>
+</html>
